@@ -1,0 +1,296 @@
+/* stage.css - Styles spécifiques à la page de gestion des stages */
+
+/* ===== ONGLETS ===== */
+.stage-onglets {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #667eea;
+}
+
+.stage-onglet {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-bottom: none;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+    color: #4a5568;
+    transition: all 0.3s ease;
+}
+
+.stage-onglet:hover {
+    background: #edf2f7;
+}
+
+.stage-onglet.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.stage-contenu-onglet {
+    display: none;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0 0 5px 5px;
+}
+
+.stage-contenu-onglet.active {
+    display: block;
+}
+
+/* ===== SECTIONS DE FORMULAIRES ===== */
+.stage-form-section {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stage-form-section h4 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cbd5e0;
+}
+
+/* ===== INFOS BULLES ===== */
+.stage-info-bulle {
+    background: linear-gradient(135deg, #e6fffa, #b2f5ea);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #38b2ac;
+    box-shadow: 0 4px 15px rgba(56, 178, 172, 0.1);
+}
+
+.stage-info-bulle p {
+    margin: 0;
+    color: #234e52;
+}
+
+.stage-info-bulle strong {
+    color: #2d3748;
+}
+
+/* ===== STATISTIQUES ===== */
+.stage-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stage-stat-card {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stage-stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stage-stat-card h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.stage-stat-card p {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* ===== TABLEAU SPÉCIFIQUE STAGES ===== */
+.stage-table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.stage-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.stage-table-container th {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    border: none;
+}
+
+.stage-table-container td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+.stage-table-container tr:hover {
+    background: #f7fafc;
+}
+
+.stage-table-container tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== GROUPES DE FORMULAIRES SPÉCIFIQUES ===== */
+.stage-form-group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stage-form-group-inline {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.stage-form-group-inline .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* ===== BADGES SPÉCIFIQUES ===== */
+.stage-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.stage-badge-success {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+}
+
+.stage-badge-warning {
+    background: linear-gradient(135deg, #ed8936, #dd6b20);
+    color: white;
+}
+
+.stage-badge-danger {
+    background: linear-gradient(135deg, #f56565, #e53e3e);
+    color: white;
+}
+
+.stage-badge-info {
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    color: white;
+}
+
+/* ===== STATISTIQUES DÉTAILLÉES ===== */
+.stage-detailed-stats {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.stage-detailed-stats h4 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stage-stats-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stage-stat-item {
+    text-align: center;
+    padding: 15px;
+    min-width: 150px;
+}
+
+.stage-stat-item h5 {
+    color: #4a5568;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.stage-stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stage-stat-percentage {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .stage-onglets {
+        flex-direction: column;
+    }
+    
+    .stage-onglet {
+        margin-right: 0;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .stage-onglet.active {
+        border-radius: 5px;
+    }
+    
+    .stage-contenu-onglet {
+        border-radius: 0 0 5px 5px;
+    }
+    
+    .stage-form-group-inline {
+        flex-direction: column;
+    }
+    
+    .stage-stats-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stage-stat-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stage-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stage-form-section {
+        padding: 15px;
+    }
+    
+    .stage-table-container th,
+    .stage-table-container td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
